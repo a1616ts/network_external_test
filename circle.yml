@@ -51,13 +51,14 @@ database:
 
 ## Customize test commands
 test:
-  override:
-    - bundle exec rspec # use PHPunit for testing
+  # override:
+  #   - bundle exec rspec # use PHPunit for testing
   post:
-    - bundle exec rake jasmine:ci: # add an extra test type
-        environment:
-          RAILS_ENV: test
-          RACK_ENV: test
+    - bundle exec rspec
+    # - bundle exec rake jasmine:ci: # add an extra test type
+        # environment:
+        #   RAILS_ENV: test
+        #   RACK_ENV: test
 
 ## Customize deployment commands
 deployment:
