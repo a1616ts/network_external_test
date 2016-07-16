@@ -2,7 +2,7 @@
 machine:
 
   timezone:
-    Japan/Tokyo # Set the timezone
+    Asia/Tokyo # Set the timezone
 
   # Version of ruby to use
   ruby:
